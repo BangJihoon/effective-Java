@@ -12,7 +12,7 @@
 + 이해하기 어렵거나, 추가적인 학습이 필요한 부분은 Issue를 통해 질의 응답
 + 미해결 이슈는 공론화하여 함께 학습   
 
-### 참고 (블로그)
+### 참고
 + [catsbi 님 블로그](https://catsbi.oopy.io/d7f3a636-b613-453b-91c7-655d71fda2b1)
 + [jiniaslog 님 블로그](https://www.jiniaslog.co.kr/article/view?articleId=52)
 + [otrodevym 님 블로그](https://otrodevym.tistory.com/entry/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C-%EC%9E%90%EB%B0%94-2%EC%9E%A5-%EA%B0%9D%EC%B2%B4-%EC%83%9D%EC%84%B1%EA%B3%BC-%ED%8C%8C%EA%B4%B4)
