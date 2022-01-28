@@ -24,25 +24,34 @@
 <!--
 WEEK11
 + ✅ [Chapter11] [직렬화](src/effectivejava/chapter11)
+
 WEEK10
 + ✅ [Chapter10] [동시성](src/effectivejava/chapter10)
+
 WEEK9
 + ✅ [Chapter9] [예외](src/effectivejava/chapter9)
+
 WEEK8
 + ✅ [Chapter8] [일반적인 프로그래밍 원칙](src/effectivejava/chapter8)
+
 WEEK7
 + ✅ [Chapter7] [메서드](src/effectivejava/chapter7)
+
 WEEK6
 + ✅ [Chapter6] [람다와 스트림](src/effectivejava/chapter6)
+
 WEEK5
 + ✅ [Chapter5] [열거 타입과 애너테이션](src/effectivejava/chapter5)
+
 WEEK4
 + ✅ [Chapter4] [제네릭](src/effectivejava/chapter4)
+
 WEEK3
 + ✅ [Chapter3] [클래스와 인터페이스](src/effectivejava/chapter3)
 -->
 WEEK2
 + ✅ [Chapter2] [객체 생성과 파괴](src/effectivejava/chapter2)
++ 
 week1
 + ✅ OT
 + ✅ 스터디 방식 논의
