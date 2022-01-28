@@ -1,7 +1,4 @@
 # 『이펙티브 자바 3판 스터디』
-
-<img src="https://github.com/WegraLee/effective-java-3e-source-code/blob/master/EJ3.jpg" width="250">
-
 ### 도서
 + Effective Java 3rd Edition
 
@@ -15,7 +12,10 @@
 + 이해하기 어렵거나, 추가적인 학습이 필요한 부분은 Issue를 통해 질의 응답
 + 미해결 이슈는 공론화하여 함께 학습   
 
-### 진행
+### 일정
 
-+ [week2 - chapter2](https://github.com/effectiveJavaStudy2022/effective-java-3e-code/tree/master/src/effectivejava/chapter2)
-+ week1 - OT
+week2 
++ ✅ [chapter2](https://github.com/effectiveJavaStudy2022/effective-java-3e-code/tree/master/src/effectivejava/chapter2)
+
+week1
++ ✅ OT
