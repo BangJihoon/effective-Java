@@ -53,5 +53,4 @@ WEEK2
 + ✅ [Chapter2] [객체 생성과 파괴](src/effectivejava/chapter2)
 
 WEEK1
-+ ✅ OT
-+ ✅ 스터디 방식 논의
++ ✅ OT & 스터디 방식 논의
