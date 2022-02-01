@@ -21,7 +21,7 @@
 <br/>
 
 ## 계획
-<!--
+
 WEEK11
 + ✅ [Chapter11] [직렬화](src/effectivejava/chapter11)
 
@@ -48,10 +48,9 @@ WEEK4
 
 WEEK3
 + ✅ [Chapter3] [클래스와 인터페이스](src/effectivejava/chapter3)
--->
+
 WEEK2
 + ✅ [Chapter2] [객체 생성과 파괴](src/effectivejava/chapter2)
-
 
 week1
 + ✅ OT
