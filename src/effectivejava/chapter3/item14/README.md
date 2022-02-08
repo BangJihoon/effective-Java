@@ -108,7 +108,6 @@ static Comparator<Object> hashCodeOrder = new Comparator<>() {
 
 이런 방식은 얼핏보면 문제 없을 것 같지만 정수 오버플로 혹은  <br/> IEEE754 부동소수점 계산 방식에 따른 오류를 낼 수 있다.  <br/> 
 게다가 속도가 엄청 빠르지도 않다.  <br/> 
-대신, 다음처럼 정적 compare메서드 혹은 비교자 생성 메서드를 활용해보자.  <br/> 
 
 ```java
 static Comparator<Object hashCodeOrder = new Comparator<>(){
@@ -117,6 +116,7 @@ static Comparator<Object hashCodeOrder = new Comparator<>(){
   }
 }
 ```
+대신, 아래와 같이 정적 메소드를 활용하는게 더 좋다  <br/> 
 
 ```java
 static Comparator<Object> hashCodeOrder = Comparator.comparingInt(Object::hashCode);
