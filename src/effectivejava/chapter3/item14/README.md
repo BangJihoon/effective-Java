@@ -36,8 +36,8 @@ equals 규약과의 비슷하다.
 <br/>
 
 ### 작성 요령
-Comparable은 타입을 인수로 받는 제네릭 인터페이스라서 compareTo 메서드의 인수 타입은 컴파일 타임에 정해진다. 
-Comparable을 구현하지 않은 필드나 표준이 아닌 순서로 비교해야 할 경우 Comparator를 쓰면 된다. 
+Comparable은 타입을 인수로 받는 제네릭 인터페이스라서 <br/> compareTo 메서드의 인수 타입은 컴파일 타임에 정해진다.  <br/> 
+Comparable을 구현하지 않은 필드나 표준이 아닌 순서로 비교해야 할 경우  <br/> Comparator를 쓰면 된다. 
 
 <br/>
 
@@ -75,7 +75,7 @@ public class PhoneNumber implements Comparable<PhoneNumber>{
 }
 ```
 
-자바 8 부터는 Comparator 인터페이스가 비교자 생성 메서드를 이용해 메서드 연쇄 방식으로 비교자를 생성할 수 있게 되었다. 
+자바 8 부터는 Comparator 인터페이스가 비교자 생성 메서드를 이용해 메서드 연쇄 방식으로 비교자를 생성할 수 있게 되었다.  <br/> 
 방식은 간결하지만 성능은 떨어진다. 
 
 ```java
@@ -94,7 +94,8 @@ public static final Comparator<PhoneNumber> COMPARATOR = comparingInt(PhoneNumbe
   + 자바에서 여기까지 타입추론을 제대로 하지 못하기 때문에 명시해 줄 필요가 있다. 
   + 물론, 두 번째 호출부터는 타입추론이 제대로 동작한다. 
   + 정적 메서드 혹은 비교자 생성 메서드를 활용하자.
-  + 객체간 순서를 정한다고 해시코드를 기준으로 정렬하기도하는데 단순히 첫 번째 값이 크면 양수, 같으면 0, 첫 번째 값이 작으면 음수를 반환한다는 것만 생각해서 다음과 같이 작성을해선 안된다.
+  + 객체간 순서를 정한다고 해시코드를 기준으로 정렬하기도하는데 
+  + 단순히 첫 번째 값이 크면 양수, 같으면 0, 첫 번째 값이 작으면 음수를 반환한다는 것만 생각해서 다음과 같이 작성을해선 안된다.
 
 #### 추이성을 위배하는 비교자
 ```java
@@ -105,9 +106,9 @@ static Comparator<Object> hashCodeOrder = new Comparator<>() {
 }
 ```
 
-이런 방식은 얼핏보면 문제 없을 것 같지만 정수 오버플로 혹은 IEEE754 부동소수점 계산 방식에 따른 오류를 낼 수 있다. 
-게다가 속도가 엄청 빠르지도 않다. 
-대신, 다음처럼 정적 compare메서드 혹은 비교자 생성 메서드를 활용해보자. 
+이런 방식은 얼핏보면 문제 없을 것 같지만 정수 오버플로 혹은  <br/> IEEE754 부동소수점 계산 방식에 따른 오류를 낼 수 있다.  <br/> 
+게다가 속도가 엄청 빠르지도 않다.  <br/> 
+대신, 다음처럼 정적 compare메서드 혹은 비교자 생성 메서드를 활용해보자.  <br/> 
 
 ```java
 static Comparator<Object hashCodeOrder = new Comparator<>(){
@@ -117,16 +118,19 @@ static Comparator<Object hashCodeOrder = new Comparator<>(){
 }
 ```
 
-정적 compare 메서드를 활용한 비교자
+#### 정적 compare 메서드를 활용한 비교자
 
 ```java
 static Comparator<Object> hashCodeOrder =
 Comparator.comparingInt(Object::hashCode);
 ```
 
-정리
+
+#### 정리
 ```
 순서를 고려해야하는 값 클래스는 Comparable인터페이스를 꼭 구현하면 좋다. 
+ 
 compareTo 메서드에서는 < , >같은 연산자는 쓰지 않아야 한다.
+
 박싱된 기본 타입 클래스가 제공하는 정적 compare 메서드나 Comparator 인터페이스가 제공하는 비교자 생성 메서드를 활용하자. 
 ```
