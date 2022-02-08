@@ -75,8 +75,8 @@ public class PhoneNumber implements Comparable<PhoneNumber>{
 }
 ```
 
-자바 8 부터는 Comparator 인터페이스가 비교자 생성 메서드를 이용해 메서드 연쇄 방식으로 비교자를 생성할 수 있게 되었다.  <br/> 
-방식은 간결하지만 성능은 떨어진다. 
+자바 8 부터는 Comparator 인터페이스가 비교자 생성 메서드를 이용해  <br/>  메서드 연쇄 방식으로 비교자를 생성할 수 있게 되었다.  <br/> 
+방식은 간결하지만 성능은 떨어진다.  <br/> 
 
 ```java
 public static final Comparator<PhoneNumber> COMPARATOR = comparingInt(PhoneNumber::getPrefix)
