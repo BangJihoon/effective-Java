@@ -36,8 +36,8 @@ equals 규약과의 비슷하다.
 <br/>
 
 ### 작성 요령
-Comparable은 타입을 인수로 받는 제네릭 인터페이스라서 <br/> compareTo 메서드의 인수 타입은 컴파일 타임에 정해진다.  <br/> 
-Comparable을 구현하지 않은 필드나 표준이 아닌 순서로 비교해야 할 경우  <br/> Comparator를 쓰면 된다. 
+Comparable은 타입을 인수로 받는 제네릭 인터페이스라서 compareTo 메서드의 인수 타입은 컴파일 타임에 정해진다.  <br/> 
+Comparable을 구현하지 않은 필드나 표준이 아닌 순서로 비교해야 할 경우, Comparator를 쓰면 된다. 
 
 <br/>
 
