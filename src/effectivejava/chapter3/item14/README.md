@@ -42,7 +42,7 @@ Comparable을 구현하지 않은 필드나 표준이 아닌 순서로 비교해
 <br/>
 
 ### 기본적인 사용 사례 
-#### 객체 참조 필드가 하나뿐인 비교자
+#### 객체 참조 필드가 하나뿐인 경우
 ```java
 public final class CaseInsensitiveString implements Comparable<CaseInsensitiveString>{
   private final String str;
@@ -97,7 +97,7 @@ public static final Comparator<PhoneNumber> COMPARATOR = comparingInt(PhoneNumbe
   + 객체간 순서를 정한다고 해시코드를 기준으로 정렬하기도하는데 
   + 단순히 첫 번째 값이 크면 양수, 같으면 0, 첫 번째 값이 작으면 음수를 반환한다는 것만 생각해서 다음과 같이 작성을해선 안된다.
 
-#### 추이성을 위배하는 비교자
+#### 추이성을 위배하는 경우
 ```java
 static Comparator<Object> hashCodeOrder = new Comparator<>() {
   public int compare(Object 01, Object 02) {
@@ -118,12 +118,10 @@ static Comparator<Object hashCodeOrder = new Comparator<>(){
 }
 ```
 
-#### 정적 compare 메서드를 활용한 비교자
-
 ```java
-static Comparator<Object> hashCodeOrder =
-Comparator.comparingInt(Object::hashCode);
+static Comparator<Object> hashCodeOrder = Comparator.comparingInt(Object::hashCode);
 ```
+
 
 
 #### 정리
