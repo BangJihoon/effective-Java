@@ -6,7 +6,8 @@ Comparable 인터페이스는 compareTo라는 하나의 메서드를 정의하�
 
 자바에서 제공하는 모든 값 클래스와 열거 타입이 Comparable을 구현했다. 
 
-알파벳, 숫자, 연대, 번호등 순서가 있는 값 클래스를 만들 때 Comparable를 사용하자.
+단순 동치성 비교 + 순서까지 비교 + 제네릭
+
 
 <br/>
 
@@ -29,9 +30,9 @@ equals 규약과의 비슷하다.
 
 <br/>
 
-#### equals 규약과의 차이점
+#### equals 규약과의 차이점 (제너릭)
 + 모든 객체에 대해 전역 동치관계를 부여하는 equals와 다르게 compareTo는 타입이 다른 객체를 신경쓰지 않아도 된다.
-+ 다를 경우 정렬할 수 없고, 단순히 ClassCastException을 던지면 그만이다. 
++ 다를 경우 정렬할 수 없고, ClassCastException을 반환하기 때문. 
 
 <br/>
 
