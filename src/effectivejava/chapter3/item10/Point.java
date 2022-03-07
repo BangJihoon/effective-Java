@@ -10,6 +10,7 @@ public class Point {
         this.y = y;
     }
 
+    // 중복 검사 용도
     @Override public boolean equals(Object o) {
         if (!(o instanceof Point))
             return false;
@@ -17,16 +18,9 @@ public class Point {
         return p.x == x && p.y == y;
     }
 
-//    // 잘못된 코드 - 리스코프 치환 원칙 위배! (59쪽)
-//    @Override public boolean equals(Object o) {
-//        if (o == null || o.getClass() != getClass())
-//            return false;
-//        Point p = (Point) o;
-//        return p.x == x && p.y == y;
-//    }
 
-    // 아이템 11 참조
-    @Override public int hashCode()  {
-        return 31 * x + y;
+    @Override public int hashCode()  { // 버켓을 찾는 용도
+        return 31;
     }
+
 }
