@@ -10,7 +10,7 @@ public class test {
         set.add(new Point(1,1));
         set.add(new Point(1,1));
 
-        System.out.println(set.size());
+//        System.out.println(set.size());
 
         for (Point o : set) {
             System.out.println(o.hashCode());
