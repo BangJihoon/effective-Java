@@ -3,6 +3,7 @@
 + Effective Java 3rd Edition
 
 ### 일정
++ 2022.1.25 ~2022.3.5  - 11주동안 진행
 + 매주 화요일 9시
 
 ### 방식
@@ -13,10 +14,9 @@
 + 미해결 이슈는 공론화하여 함께 학습   
 
 ### 참고
-+ [catsbi 님 블로그](https://catsbi.oopy.io/d7f3a636-b613-453b-91c7-655d71fda2b1)
-+ [jiniaslog 님 블로그](https://www.jiniaslog.co.kr/article/view?articleId=52)
-+ [otrodevym 님 블로그](https://otrodevym.tistory.com/entry/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C-%EC%9E%90%EB%B0%94-2%EC%9E%A5-%EA%B0%9D%EC%B2%B4-%EC%83%9D%EC%84%B1%EA%B3%BC-%ED%8C%8C%EA%B4%B4)
-+ [keep_going 님 블로그](https://velog.io/@keep_going/%EA%B0%9D%EC%B2%B4-%EC%83%9D%EC%84%B1%EA%B3%BC-%ED%8C%8C%EA%B4%B4)
++ [catsbi 님 블로그](https://catsbi.oopy.io/5ce4e76e-645a-4c5f-9e61-7ffb5390e09e)
++ [jiniaslog 님 블로그](https://www.jiniaslog.co.kr/article/list?category=JAVA&tier=2&page=3)
++ [otrodevym 님 블로그](https://otrodevym.tistory.com/search/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C)
 
 <br/>
 

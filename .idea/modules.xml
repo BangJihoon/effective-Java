@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/eclipse-workspace/ALGORITHMER_3rd/src/effective-java-3e-code.iml" filepath="$USER_HOME$/eclipse-workspace/ALGORITHMER_3rd/src/effective-java-3e-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/effective-java-3e-code.iml" filepath="$PROJECT_DIR$/effective-java-3e-code.iml" />
     </modules>
   </component>
 </project>
