@@ -11,7 +11,7 @@ public class Chooser<T> {
     private final Random rnd = new Random();
 
     // 코드 31-5 T 생산자 매개변수에 와일드카드 타입 적용 (184쪽)
-    public Chooser(Collection<? extends T> choices) {
+    public Chooser(Collection<? extends T> choices) { // 하위타입 모두 받을수 있게! extends
         choiceList = new ArrayList<>(choices);
     }
 
@@ -21,7 +21,7 @@ public class Chooser<T> {
 
     public static void main(String[] args) {
         List<Integer> intList = List.of(1, 2, 3, 4, 5, 6);
-        Chooser<Number> chooser = new Chooser<>(intList);
+        Chooser<Number> chooser = new Chooser<>(intList); // producer (=공급자)  - integer 공급
         for (int i = 0; i < 10; i++) {
             Number choice = chooser.choose();
             System.out.println(choice);

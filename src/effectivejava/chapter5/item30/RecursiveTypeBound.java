@@ -17,7 +17,10 @@ public class RecursiveTypeBound {
     }
 
     public static void main(String[] args) {
-        List<String> argList = Arrays.asList(args);
+        List<String> argList = new ArrayList<>();
+        argList.add("1");
+        argList.add("2");
+        argList.add("3");
         System.out.println(max(argList));
     }
 }
