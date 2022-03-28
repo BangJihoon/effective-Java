@@ -64,11 +64,11 @@ public class Stack<E> {
 
     // 제네릭 Stack을 사용하는 맛보기 프로그램
     public static void main(String[] args) {
-        Stack<Number> numberStack = new Stack<>();
-        Iterable<Integer> integers = Arrays.asList(3, 1, 4, 1, 5, 9);
+        Stack<Integer> numberStack = new Stack<>();
+        Iterable<Integer> integers = Arrays.asList(3, 1, 4, 1, 5, 9); // 공급자
         numberStack.pushAll(integers);
 
-        Collection<Object> objects = new ArrayList<>();
+        Collection<Integer> objects = new ArrayList<>(); // 소비자
         numberStack.popAll(objects);
 
         System.out.println(objects);
